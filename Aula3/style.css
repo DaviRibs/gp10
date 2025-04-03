@@ -8,6 +8,7 @@ font-family: sans-serif;
     width: 50%;
     height: 100vh;
     display:flex;
+    margin: auto;
 }
 
 .container .esquerda{
@@ -38,7 +39,7 @@ font-size: 30px;
 }
 
 .container .esquerda input{
-    width: "80%";
+    width:  80%;
     height: 40px;
     background-color: #f3f3f3;
     border: 1px solid #cccccc;
