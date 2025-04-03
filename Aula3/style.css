@@ -54,3 +54,11 @@ font-size: 30px;
     width: 20px;
     height: 20px;
 }
+
+button {
+    width: auto; /* ou um valor fixo como 150px */
+    max-width: 200px;
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    font-size: 16px; /* Ajuste conforme necessário */
+}
+
