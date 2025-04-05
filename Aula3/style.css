@@ -1,104 +1,117 @@
+/* Remove as margens e os espaçamentos padrão do body e define a fonte padrão */
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    }
-    
-    .container {
-        width: 100%;
-        height: 100vh;
-        display:flex;
-        margin: auto;
-    }
-    
-    .container .esquerda{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        
-    }
-    
-    .container .direita{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .container .esquerda h5{
-        color:#ec4b5c;
-        font-size: 30px;
-    }
-    
-    .container .esquerda label{
-        font-weight: bold;
-        font-size: 17px;
-        color: #545454;
-    }
-    
-    .container .esquerda input{
-        width:  80%;
-        height: 40px;
-        background-color: #f3f3f3;
-        border: 1px solid #cccccc;
-        border-radius: 8px;
-        outline: none;
-        margin-bottom: 20px;
-        padding-left: 10px;
-    }
-.container .esquerda input:focus{
-    border: 1px solid #ec4b5c;
 }
 
+/* Container principal que divide a tela em duas partes: esquerda e direita */
+.container {
+    width: 100%;             /* Ocupa toda a largura da tela */
+    height: 100vh;           /* Ocupa 100% da altura da tela (viewport) */
+    display: flex;           /* Organiza os elementos filhos lado a lado (linha) */
+    margin: auto;            /* Centraliza o container (pode não ter efeito com width: 100%) */
+}
 
-    .container .esquerda #check{
-        width: 20px;
-        height: 20px;
-        margin-top: 17px;
-    }
+/* Coluna da esquerda: onde ficam os textos, inputs, botões e links */
+.container .esquerda {
+    width: 50%;              /* Ocupa metade da tela */
+    height: 100%;            /* Altura total da tela */
+    display: flex;           /* Para organizar os elementos internos */
+    flex-direction: column; /* Os elementos dentro ficam em coluna (um abaixo do outro) */
+    padding: 50px;           /* Espaço interno em todos os lados */
+}
+
+/* Coluna da direita: pode conter imagem, ilustração ou outro conteúdo */
+.container .direita {
+    width: 50%;              /* Outra metade da tela */
+    height: 100%;
+    display: flex;           
+    align-items: center;     /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
     
-   .container .esquerda .opcoes button{
+}
+
+/* Estilo do título h5 dentro da esquerda */
+.container .esquerda h5 {
+    color: #ec4b5c;          /* Cor vermelha */
+    font-size: 30px;         /* Tamanho grande da fonte */
+}
+
+/* Estilo das etiquetas (labels) dos inputs */
+.container .esquerda label {
+    font-weight: bold;       /* Texto em negrito */
+    font-size: 17px;         /* Tamanho da fonte */
+    color: #545454;          /* Cor cinza escuro */
+}
+
+/* Estilo dos campos de entrada (inputs de texto, e-mail etc) */
+.container .esquerda input {
+    width: 80%;              /* Largura do campo */
+    height: 40px;            /* Altura do campo */
+    background-color: #f3f3f3; /* Fundo cinza claro */
+    border: 1px solid #cccccc; /* Borda cinza */
+    border-radius: 8px;        /* Cantos arredondados */
+    outline: none;             /* Remove a borda azul padrão ao clicar */
+    margin-bottom: 20px;       /* Espaço abaixo de cada campo */
+    padding-left: 10px;        /* Espaço entre a borda e o texto do campo */
+}
+
+/* Quando o input está em foco (clicado), muda a cor da borda */
+.container .esquerda input:focus {
+    border: 1px solid #ec4b5c; /* Borda vermelha */
+}
+
+/* Estilo específico do checkbox (#check) */
+.container .esquerda #check {
+    width: 20px;
+    height: 20px;
+    margin-top: 17px;         /* Espaço superior para alinhar com o texto */
+}
+
+/* Estilo do botão dentro da seção de opções */
+.container .esquerda .opcoes button {
     width: 250px;
     height: 30px;
     border: none;
     border-radius: 8px;
-    background-color: #ec4b5c;
-    color: white;
-    font-weight: bold;
-    transition: all  300ms       ease-in-out;
-   }
+    background-color: #ec4b5c; /* Fundo vermelho */
+    color: white;              /* Texto branco */
+    font-weight: bold;         /* Texto em negrito */
+    transition: all 300ms ease-in-out; /* Animação suave ao passar o mouse */
+}
 
-   .container .esquerda .opcoes button:hover{
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid #ec4b5c;
-    color:#ec4b5c;
-    }
-    
-   .container .esquerda .opcoes a{
-    text-decoration: none;
-    color: #ec4b5c;
+/* Efeito ao passar o mouse sobre o botão */
+.container .esquerda .opcoes button:hover {
+    cursor: pointer;          /* Muda o cursor para mãozinha */
+    background-color: white;  /* Fundo branco */
+    border: 1px solid #ec4b5c;/* Borda vermelha */
+    color: #ec4b5c;           /* Texto vermelho */
+}
+
+/* Estilo dos links (como "Esqueci a senha") dentro das opções */
+.container .esquerda .opcoes a {
+    text-decoration: none;   /* Remove o sublinhado */
+    color: #ec4b5c;          /* Cor vermelha */
     font-size: 15px;
+}
 
-   }
+/* Container que agrupa o botão e o link lado a lado */
+.container .esquerda .opcoes {
+    display: flex;           /* Alinha em linha */
+    gap: 30px;               /* Espaço entre os elementos */
+    align-items: center;     /* Centraliza verticalmente */
+}
 
-   .container .esquerda .opcoes{
-    display: flex;
-    gap: 30px;
+/* Container que agrupa o checkbox com o texto de "aceito os termos" */
+.container .esquerda .termos {
+    display: flex;           /* Lado a lado */
     align-items: center;
-    
-   }
+    gap: 10px;               /* Espaço entre o checkbox e o link */
+}
 
-   .container .esquerda .termos{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    }
-
-    .container .esquerda .termos a{
-        text-decoration: none;
-        color: #ec4b5c;
-    }
+/* Estilo do link dentro da parte de termos */
+.container .esquerda .termos a {
+    text-decoration: none;   /* Sem sublinhado */
+    color: #ec4b5c;          /* Cor vermelha */
+}
