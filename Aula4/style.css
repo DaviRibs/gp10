@@ -1,0 +1,142 @@
+/* Reset básico do body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Fonte padrão */
+}
+
+/* Container principal que ocupa toda a tela e organiza os elementos em coluna */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho do site */
+.container header {
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    height: 10%; /* Ocupa 10% da altura da tela */
+}
+
+/* Área da logo */
+.container header .logo {
+    min-width: 120px; /* Largura mínima para não cortar o texto */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px; /* Espaço à esquerda */
+}
+
+/* Estilo do texto da logo */
+.container header .logo p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navegação central do header */
+.container header .navegacao {
+    flex-grow: 1; /* Ocupa o espaço restante do header */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Menu de navegação */
+.container header .navegacao nav {
+    display: flex;
+    gap: 30px; /* Espaço entre os links */
+    padding-left: 20px;
+}
+
+/* Links da navegação */
+.container header .navegacao nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* Link selecionado (ativo) */
+.container header .navegacao nav #select {
+    font-weight: bold;
+}
+
+/* Botões do lado direito do header (Entrar e Cadastrar) */
+.container header .btns {
+    min-width: 160px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Estilo dos botões de texto (links) */
+.container header .btns a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Estilo do botão "Entrar" */
+.container header .btns button {
+    border: none;
+    background-color: #9563EA;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Área principal da página */
+.container main {
+    width: 100%;
+    height: 90%; /* Ocupa o restante da tela (90%) */
+    display: flex;
+}
+
+/* Lado esquerdo do main */
+.container main .esquerda {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+    flex-direction: column;
+}
+
+/* Lado direito do main */
+.container main .direita {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título principal do lado esquerdo */
+.container main .esquerda h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #9563EA;
+}
+
+/* Parágrafo de destaque */
+.container main .esquerda p {
+    font-size: 25px;
+    color: #211632;
+}
+
+/* Botão de chamada para ação */
+.container main .esquerda button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #9563EA;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+}
