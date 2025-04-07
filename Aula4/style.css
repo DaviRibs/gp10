@@ -127,6 +127,7 @@ body {
 .container main .esquerda p {
     font-size: 25px;
     color: #211632;
+    margin-top: -20px; /* sobe o parágrafo */
 }
 
 /* Botão de chamada para ação */
