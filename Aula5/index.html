@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define o idioma da página como inglês -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade em dispositivos móveis -->
+    
+    <!-- Importa os ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Página de Login</title> <!-- Título que aparece na aba do navegador -->
+</head>
+
+<body>
+    <div class="container"> <!-- Container principal que engloba tudo -->
+
+        <!-- Lado esquerdo da tela (mensagem de boas-vindas) -->
+        <div class="esquerda">
+            <h1>Olá, seja bem-vindo!</h1>
+            <p>Não possui uma conta?</p>
+            <button>Registra-se</button> <!-- Botão para registro -->
+        </div>
+
+        <!-- Lado direito da tela (formulário de login) -->
+        <div class="direita">
+            <h1>Login</h1>
+
+            <!-- Campo de usuário -->
+            <div class="inp">
+                <div class="campo">
+                    <input type="text" placeholder="Usúario"> <!-- Campo de entrada para o nome de usuário -->
+                </div>
+                <div class="icone">
+                    <i class="fa-solid fa-user"></i> <!-- Ícone de usuário -->
+                </div>
+            </div>
+
+            <!-- Campo de senha -->
+            <div class="inp">
+                <div class="campo">
+                    <input type="password" placeholder="Senha"> <!-- Campo de entrada para senha -->
+                </div>
+                <div class="icone">
+                    <i class="fa-solid fa-lock"></i> <!-- Ícone de cadeado -->
+                </div>
+            </div>
+
+            <!-- Link para recuperação de senha -->
+            <a href="">Esqueceu sua senha?</a>
+
+            <!-- Botão de login -->
+            <button>Login</button>
+
+            <p>Ou acesse com suas redes sociais</p>
+
+            <!-- Ícones de redes sociais -->
+            <div class="opcoes">
+                <div class="opcao"><i class="fa-brands fa-google"></i></div>
+                <div class="opcao"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="opcao"><i class="fa-brands fa-github"></i></div>
+                <div class="opcao"><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
