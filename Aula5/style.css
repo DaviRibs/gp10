@@ -1,55 +1,55 @@
 /* Remove margens e usa fonte sem serifa */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+    margin: 0;                  /* Remove a margem padrão */   
+    padding: 0;                 /* remove o preencimento padrão */
+    font-family: sans-serif;    /* Usa uma fonte sem serifa */
 }
 
 /* Define o layout flexível ocupando 100% da tela */
 .container {
-    width: 100%;
-    height: 100vh;
+    width: 100%;    /* Ocupa toda a largura da tela */
+    height: 100vh;  /* Ocupa toda a altura da tela (viewport height) */
     display: flex; /* Alinha lado a lado: esquerda e direita */
 }
 
 /* Lado esquerdo: fundo azul com texto centralizado */
 .container .esquerda {
-    width: 50%;
-    height: 100%;
-    background-color: #6194ef;
-    border-top-right-radius: 150px;
-    border-bottom-right-radius: 150px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 50%;                     /* Ocupa metade da largura da tela */              
+    height: 100%;                   /* Altura total */    
+    background-color: #6194ef;      /* Cor de fundo azul */
+    border-top-right-radius: 150px;     /* Borda arredondada no canto superior direito */
+    border-bottom-right-radius: 150px;      /* Borda arredondada no canto inferior direito */
+    color: white;                       /* Texto branco */
+    display: flex;                          /* Flexbox para centralizar conteúdo */  
+    align-items: center;                    /* Alinha itens no centro vertical */ 
+    justify-content: center;            /* Alinha itens no centro horizontal */  
+    flex-direction: column;             /* Empilha os elementos verticalmente */
 }
 
 /* Título grande no lado esquerdo */
-.container .esquerda h1 {
-    font-size: 50px;
+.container .esquerda h1 {   
+    font-size: 50px;       /* Título grande */ 
 }
 
 .container .esquerda p {
-    font-size: 30px;
+    font-size: 30px;        /* Texto de suporte */
 }
 
 /* Botão de registro estilizado */
 .container .esquerda button {
     width: 200px;
     height: 50px;
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
+    border: 1px solid white;   /* Borda branca */
+    background-color: transparent; /* Fundo transparente */
+    color: white;                    /* Texto branco */
+    font-size: 20px;                    
+    border-radius: 10px;            /* Cantos arredondados */
+    cursor: pointer;                /* Muda o cursor ao passar por cima */
     font-weight: bold;
 }
 
 /* Lado direito com conteúdo centralizado */
-.container .direita {
+.container .direita {   /* Ocupa metade da tela */
     width: 50%;
     height: 100%;
     display: flex;
@@ -68,7 +68,7 @@ body {
     width: 70%;
     height: 50px;
     display: flex;
-    background-color: #EDEDED;
+    background-color: #EDEDED; /* Fundo cinza claro */
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -83,10 +83,10 @@ body {
 .container .direita .inp .campo input {
     width: 100%;
     height: 100%;
-    border: none;
+    border: none;               /* Remove a borda padrão */
     background-color: transparent;
     border-radius: 10px;
-    padding-left: 10px;
+    padding-left: 10px;         /* Espaço interno à esquerda */
     font-size: 20px;
 }
 
@@ -98,14 +98,14 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: #7c7c7c;
+    color: #7c7c7c;         /* Cor do ícone */
 }
 
 /* Estiliza o link "Esqueceu sua senha?" */
 .container .direita a {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: black;           /* Deixa o texto preto */
-    font-size: 18px;        /* Define o tamanho da fonte */
+    text-decoration: none;      /* Remove o sublinhado do link */
+    color: black;               /* Deixa o texto preto */
+    font-size: 18px;            /* Define o tamanho da fonte */
 }
 
 /* Estiliza o botão de login */
@@ -150,7 +150,7 @@ body {
     /* Lado esquerdo agora ocupa 25% da altura total */
     .container .esquerda {
         width: 100%;
-        height: 25%;
+        height: 25%; 
         border-top-right-radius: 0px;
         border-bottom-right-radius: 50px;
         border-bottom-left-radius: 50px;
