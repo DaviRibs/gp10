@@ -101,3 +101,91 @@ body {
     color: #7c7c7c;
 }
 
+/* Estiliza o link "Esqueceu sua senha?" */
+.container .direita a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: black;           /* Deixa o texto preto */
+    font-size: 18px;        /* Define o tamanho da fonte */
+}
+
+/* Estiliza o botão de login */
+.container .direita button {
+    width: 70%;             /* Largura de 70% da div direita */
+    height: 50px;           /* Altura do botão */
+    border: none;           /* Remove a borda padrão */
+    background-color: #6194ef; /* Cor de fundo azul */
+    color: white;           /* Texto branco */
+    font-size: 20px;        /* Tamanho da fonte */
+    border-radius: 10px;    /* Cantos arredondados */
+    cursor: pointer;        /* Muda o cursor para "mão" ao passar o mouse */
+    font-weight: bold;      /* Texto em negrito */
+    margin-top: 20px;       /* Espaço acima do botão */
+}
+
+/* Container das opções de login com redes sociais */
+.container .direita .opcoes {
+    display: flex;                  /* Coloca as opções lado a lado */
+    width: 30%;                     /* Ocupa 30% da largura da div direita */
+    justify-content: space-between;/* Espaço igual entre os ícones */
+}
+
+/* Cada ícone de rede social */
+.container .direita .opcoes .opcao {
+    width: 50px;             /* Largura do quadrado do ícone */
+    height: 50px;            /* Altura igual pra manter formato quadrado */
+    border: 1px solid #989898; /* Borda cinza clara */
+    border-radius: 10px;     /* Cantos arredondados */
+    display: flex;           /* Alinha conteúdo com flexbox */
+    align-items: center;     /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-size: 20px;         /* Tamanho do ícone */
+}
+
+@media (max-width: 767px) {
+    /* Muda o layout para coluna (empilha as partes) */
+    .container {
+        flex-direction: column;
+    }
+
+    /* Lado esquerdo agora ocupa 25% da altura total */
+    .container .esquerda {
+        width: 100%;
+        height: 25%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    /* Tamanhos menores para o texto no celular */
+    .container .esquerda h1 {
+        font-size: 30px;
+    }
+
+    .container .esquerda p {
+        font-size: 20px;
+    }
+
+    /* Lado direito ocupa o restante (75%) */
+    .container .direita {
+        width: 100%;
+        height: 75%;
+    }
+
+    /* Aumenta a largura dos campos de input no celular */
+    .container.direita .inp {
+        width: 90%;
+    }
+
+    /* Deixa as redes sociais mais largas */
+    .container.direita .opcoes {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1023px) {
+    /* Aumenta um pouco a largura das redes sociais no tablet */
+    .container .direita .opcoes {
+        width: 50%;
+    }
+}
+
